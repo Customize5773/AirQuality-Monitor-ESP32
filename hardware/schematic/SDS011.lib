@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SDS011
+#
+DEF SDS011 U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "SDS011" 0 100 50 H V C CNN
+F2 "https://aqicn.org/sensor/sds011/" 0 -100 50 H V C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Module:SDS011
+$ENDFPLIST
+$DRAW
+S -300 -400 300 400 0 1 0 N
+X TX 1 -400 300 200 R 50 50 1 1 I
+X RX 2 -400 200 200 R 50 50 1 1 I
+X SET 3 -400 100 200 R 50 50 1 1 I
+X GND 4 -400 0 200 R 50 50 1 1 W
+X 5V 5 -400 -100 200 R 50 50 1 1 W
+X NC 6 -400 -200 200 R 50 50 1 1 P
+X NC 7 -400 -300 200 R 50 50 1 1 P
+X GND 8 400 300 200 L 50 50 1 1 W
+X 5V 9 400 200 200 L 50 50 1 1 W
+X PWM 10 400 100 200 L 50 50 1 1 O
+$ENDDRAW
+$CMPMOD
+ Manufacturer="Nova Fitness"
+ ManufacturerPartNumber="SDS011"
+ Supplier="Mouser"
+ SupplierPartNumber="713-SDS011"
+$ENDCMPMOD
+ENDDEF
+#
+#End Library
