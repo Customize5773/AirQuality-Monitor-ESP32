@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# MicroSD_Module
+#
+DEF MicroSD_Module U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "MicroSD_Module" 0 100 50 H V C CNN
+F2 "Generic SPI MicroSD Breakout" 0 -100 50 H V C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Module:MicroSD SPI
+$ENDFPLIST
+$DRAW
+S -300 -300 300 300 0 1 0 N
+X CS 1 -400 200 200 R 50 50 1 1 I
+X SCK 2 -400 100 200 R 50 50 1 1 I
+X MOSI 3 -400 0 200 R 50 50 1 1 I
+X MISO 4 -400 -100 200 R 50 50 1 1 O
+X VCC 5 -400 -200 200 R 50 50 1 1 W
+X GND 6 400 -200 200 L 50 50 1 1 W
+$ENDDRAW
+$CMPMOD
+ Manufacturer="Generic"
+ ManufacturerPartNumber="MicroSD_SPI_Module"
+ Supplier="Generic Supplier"
+ SupplierPartNumber=""
+$ENDCMPMOD
+ENDDEF
+#
+#End Library
