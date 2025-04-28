@@ -1,3 +1,33 @@
+# Pinout Reference Table:
+GPIO16 - UART TX -> SDS011 Sensor
+GPIO17 - UART RX -> SDS011 Sensor
+GPIO21 - I2C SDA -> BME680, DS3231 RTC
+GPIO22 - I2C SCL -> BME680, DS3231 RTC
+GPIO5 - SPI CS -> MicroSD Card
+GPIO18 - SPI SCK -> MicroSD Card
+GPIO23 - SPI MOSI -> MicroSD Card
+GPIO19 - SPI MISO -> MicroSD Card
+GPIO25 - PWM Output -> RGB LED (Red)
+GPIO26 - PWM Output -> RGB LED (Green)
+GPIO27 - PWM Output -> RGB LED (Blue)
+GPIO14 - PWM Output -> Buzzer+
+GND - Ground -> All modules
+3.3V - VCC -> BME680, DS3231 RTC
+5V - VCC -> SDS011, MicroSD Card
+
+# Wiring Assembly Checklist:
+- Connect GPIO16 to SDS011 TX
+- Connect GPIO17 to SDS011 RX
+- Connect GPIO21 (SDA) to BME680 and DS3231 SDA pins
+- Connect GPIO22 (SCL) to BME680 and DS3231 SCL pins
+- Connect GPIO5 (CS), GPIO18 (SCK), GPIO23 (MOSI), and GPIO19 (MISO) to MicroSD
+- Connect GPIO25, GPIO26, and GPIO27 to RGB LED channels (Red, Green, Blue)
+- Connect GPIO14 to Buzzer+
+- Common GND to all modules
+- Supply 3.3V to BME680 and DS3231 VCC
+- Supply 5V to SDS011 and MicroSD VCC
+
+```bash
 ESP32
 ├── GPIO16 ----> SDS011 TX
 ├── GPIO17 ----> SDS011 RX
@@ -19,6 +49,7 @@ Power
 
 Grounds
 ├── All modules tied to GND (common ground)
+```
 
 ---
 ## ASCII 
