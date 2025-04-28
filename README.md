@@ -56,7 +56,7 @@ Quick Steps:
 4. Configure:
     - Wi-Fi credentials in `wifi_manager.cpp`.
     - WhatsApp API Key and Phone Number in `alert_manager.cpp`.
-5. Connect the hardware
+5. Connect the hardware [hardware/schematic](hardware/schematic)
 6. Upload `src/main/main.ino` to ESP32.
 7. Monitor the Serial Monitor for system logs.
 
