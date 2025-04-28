@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Active_Buzzer
+#
+DEF Active_Buzzer LS 0 40 Y Y 1 F N
+F0 "LS" 0 0 50 H V C CNN
+F1 "Active_Buzzer" 0 100 50 H V C CNN
+F2 "https://www.mouser.com/datasheet/2/281/ps1240p02bt-1832864.pdf" 0 -100 50 H V C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Buzzer:Active_Buzzer
+$ENDFPLIST
+$DRAW
+S -200 -200 200 200 0 1 0 N
+X + 1 -300 0 200 R 50 50 1 1 W
+X - 2 300 0 200 L 50 50 1 1 W
+$ENDDRAW
+$CMPMOD
+ Manufacturer="Mallory Sonalert"
+ ManufacturerPartNumber="PS1240P02BT"
+ Supplier="Mouser"
+ SupplierPartNumber="665-PS1240P02BT"
+$ENDCMPMOD
+ENDDEF
+#
+#End Library
