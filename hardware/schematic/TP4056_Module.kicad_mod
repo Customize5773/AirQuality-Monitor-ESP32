@@ -1,0 +1,18 @@
+(module TP4056_Module (layer F.Cu) (tedit 5A8C28EF)
+  (descr "TP4056 Lithium Ion Battery Charger Module with Protection")
+  (tags "TP4056 Charger Battery")
+  (fp_text reference REF** (at 0 -10) (layer F.SilkS))
+  (fp_text value TP4056_Module (at 0 10) (layer F.Fab))
+  
+  (fp_line (start -12 -8) (end 12 -8) (layer F.SilkS) (width 0.15))
+  (fp_line (start 12 -8) (end 12 8) (layer F.SilkS) (width 0.15))
+  (fp_line (start 12 8) (end -12 8) (layer F.SilkS) (width 0.15))
+  (fp_line (start -12 8) (end -12 -8) (layer F.SilkS) (width 0.15))
+
+  (pad 1 thru_hole rect (at -7.5 -6) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask) (net B+))
+  (pad 2 thru_hole circle (at -4.5 -6) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask) (net B-))
+  (pad 3 thru_hole circle (at -1.5 -6) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask) (net OUT+))
+  (pad 4 thru_hole circle (at 1.5 -6) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask) (net OUT-))
+  (pad 5 thru_hole circle (at 4.5 -6) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask) (net IN+))
+  (pad 6 thru_hole circle (at 7.5 -6) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask) (net IN-))
+)
