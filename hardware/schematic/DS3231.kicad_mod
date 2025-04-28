@@ -1,0 +1,18 @@
+(module DS3231_Module (layer F.Cu) (tedit 5A8C25B4)
+  (descr "DS3231 RTC Module with Battery Holder")
+  (tags "RTC DS3231 I2C")
+  (fp_text reference REF** (at 0 -15) (layer F.SilkS))
+  (fp_text value DS3231 (at 0 15) (layer F.Fab))
+  
+  (fp_line (start -20 -10) (end 20 -10) (layer F.SilkS) (width 0.15))
+  (fp_line (start 20 -10) (end 20 10) (layer F.SilkS) (width 0.15))
+  (fp_line (start 20 10) (end -20 10) (layer F.SilkS) (width 0.15))
+  (fp_line (start -20 10) (end -20 -10) (layer F.SilkS) (width 0.15))
+  
+  (pad 1 thru_hole rect (at -12.7 -7.5) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at -7.62 -7.5) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask))
+  (pad 3 thru_hole circle (at -2.54 -7.5) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask))
+  (pad 4 thru_hole circle (at 2.54 -7.5) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask))
+  (pad 5 thru_hole circle (at 7.62 -7.5) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask))
+  (pad 6 thru_hole circle (at 12.7 -7.5) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask))
+)
