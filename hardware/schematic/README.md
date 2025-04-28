@@ -1,4 +1,5 @@
 # Pinout Reference Table:
+```bash
 GPIO16 - UART TX -> SDS011 Sensor
 GPIO17 - UART RX -> SDS011 Sensor
 GPIO21 - I2C SDA -> BME680, DS3231 RTC
@@ -14,6 +15,7 @@ GPIO14 - PWM Output -> Buzzer+
 GND - Ground -> All modules
 3.3V - VCC -> BME680, DS3231 RTC
 5V - VCC -> SDS011, MicroSD Card
+```
 
 # Wiring Assembly Checklist:
 - Connect GPIO16 to SDS011 TX
@@ -26,6 +28,8 @@ GND - Ground -> All modules
 - Common GND to all modules
 - Supply 3.3V to BME680 and DS3231 VCC
 - Supply 5V to SDS011 and MicroSD VCC
+
+---
 
 ```bash
 ESP32
@@ -52,6 +56,7 @@ Grounds
 ```
 
 ---
+
 ## ASCII 
 
                    +-------------------------+
@@ -83,6 +88,7 @@ Grounds
                    |
                    +-------------------------+
                    
+```                   
 TP4056 Charger:
     IN+  --> 5V USB Input (charging)
     IN-  --> GND
@@ -90,4 +96,5 @@ TP4056 Charger:
     B-   --> Battery-
     OUT+ --> ESP32 5V (Vin)
     OUT- --> GND
+```
 
