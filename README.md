@@ -39,7 +39,7 @@ It measures **PM2.5**, **temperature**, and **humidity**, sends **WhatsApp alert
 
 ## 🛠️ Setup Instructions
 
-Detailed instructions are available inside [tools/setup_instructions.md](tools/setup_instructions.md).
+Detailed instructions are available inside [tools/setup_instructions.md](tools/setup-instructions.md).
 
 Quick Steps:
 
@@ -56,7 +56,7 @@ Quick Steps:
 4. Configure:
     - Wi-Fi credentials in `wifi_manager.cpp`.
     - WhatsApp API Key and Phone Number in `alert_manager.cpp`.
-5. Connect the hardware following [docs/README_hardware.md](docs/README_hardware.md). >Progress<
+5. Connect the hardware
 6. Upload `src/main/main.ino` to ESP32.
 7. Monitor the Serial Monitor for system logs.
 
