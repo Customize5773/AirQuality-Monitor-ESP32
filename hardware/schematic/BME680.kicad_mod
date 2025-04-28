@@ -1,0 +1,22 @@
+(module BME680 (layer F.Cu) (tedit 5A8C24B3)
+  (descr "BME680 Breakout Module 4-pin 2.54mm")
+  (tags "BME680 I2C Gas Pressure Temp Humidity Sensor")
+  (fp_text reference REF** (at 0 -7) (layer F.SilkS))
+  (fp_text value BME680 (at 0 7) (layer F.Fab))
+  
+  (fp_line (start -7 -5) (end 7 -5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 7 -5) (end 7 5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 7 5) (end -7 5) (layer F.SilkS) (width 0.15))
+  (fp_line (start -7 5) (end -7 -5) (layer F.SilkS) (width 0.15))
+  
+  (pad 1 thru_hole rect (at -3.81 -2.54) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at -1.27 -2.54) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask))
+  (pad 3 thru_hole circle (at 1.27 -2.54) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask))
+  (pad 4 thru_hole circle (at 3.81 -2.54) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask))
+  
+  (model ${KISYS3DMOD}/Sensor.3dshapes/BME680.wrl
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)
