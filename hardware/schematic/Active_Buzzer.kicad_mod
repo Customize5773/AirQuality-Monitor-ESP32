@@ -1,0 +1,11 @@
+(module Buzzer_Active_12mm (layer F.Cu) (tedit 5A8C2A4B)
+  (descr "12mm Active Buzzer PS1240P02BT")
+  (tags "buzzer active sounder")
+  (fp_text reference REF** (at 0 -8) (layer F.SilkS))
+  (fp_text value Active_Buzzer (at 0 8) (layer F.Fab))
+  
+  (fp_circle (center 0 0) (end 6 0) (layer F.SilkS) (width 0.15))
+  
+  (pad 1 thru_hole rect (at -3.81 0) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net +))
+  (pad 2 thru_hole circle (at 3.81 0) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net -))
+)
